@@ -1,0 +1,32 @@
+.wrap { display:flex; flex-direction:column; gap:8px; }
+
+.presets { display:flex; gap:4px; flex-wrap:wrap; }
+
+.presetBtn {
+  font-size:12px; padding:4px 10px;
+  border:1px solid var(--border); border-radius:5px;
+  background:var(--bg); color:var(--text2);
+  transition:background .15s, border-color .15s, color .15s;
+}
+.presetBtn:hover { background:var(--bg2); }
+.active { background:var(--text); color:var(--bg); border-color:var(--text); }
+
+.customRow { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+
+.dateInput {
+  padding:5px 10px; border:1px solid var(--border);
+  border-radius:6px; background:var(--bg); color:var(--text);
+  font-size:13px; height:32px;
+}
+.dateInput:focus { outline:none; border-color:var(--blue); }
+
+.dateSep { color:var(--text3); font-size:13px; }
+
+.applyBtn {
+  padding:0 14px; height:32px;
+  background:var(--blue); color:white;
+  border:none; border-radius:6px; font-size:13px;
+  transition:opacity .15s;
+}
+.applyBtn:hover { opacity:.85; }
+.applyBtn:disabled { opacity:.4; cursor:default; }
