@@ -8,10 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "14.2.3",
+    "next": "16.2.9",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "next-auth": "4.24.7",
+    "next-auth": "4.24.14",
     "recharts": "2.12.7"
+  },
+  "overrides": {
+    "postcss": "8.5.10",
+    "uuid": "11.1.1"
   }
 }
